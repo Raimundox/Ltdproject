@@ -240,19 +240,27 @@ const Dashboard = () => {
         </div>
 
         <section className="bg-white p-4 rounded-lg shadow-md mb-4">
-          <h2 className="text-xl sm:text-2xl font-semibold mb-2">Gráficos</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 gap-4">
-            <div>
-              <LineChart chartData={userData} />
+          <h2 className="text-xl sm:text-2xl font-semibold mb-4">Gráficos</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="bg-white rounded-lg shadow-md">
+              <div className="p-4">
+                <LineChart chartData={userData} />
+              </div>
             </div>
-            <div>
-              <BarChart chartData={userData1} />
+            <div className="bg-white rounded-lg shadow-md">
+              <div className="p-4">
+                <BarChart chartData={userData1} />
+              </div>
             </div>
-            <div>
-              <PieChart chartData={userData2} />
+            <div className="bg-white rounded-lg shadow-md">
+              <div className="p-4">
+                <PieChart chartData={userData2} />
+              </div>
             </div>
-            <div>
-              <BarChart chartData={userData3} />
+            <div className="bg-white rounded-lg shadow-md">
+              <div className="p-4">
+                <BarChart chartData={userData3} />
+              </div>
             </div>
           </div>
         </section>
